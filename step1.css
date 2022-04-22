@@ -1,0 +1,248 @@
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: arial;
+	box-sizing: border-box;
+}
+
+.navegacion {
+	width: 100%;
+	height: 10vh;
+}
+
+.navegacion img{
+	padding-left: 30px;
+	padding-top: 20px; 
+	width: 150px;
+}
+form {
+	padding-bottom: 30px;
+	width: 100%;
+}
+.step {
+  width : 100%;
+  min-height : 400px;
+  margin-top : 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color : white;
+  padding-left : 5px;
+}
+
+.step .stepID {
+  font-size : 13px;
+  color : #333;
+}
+.step h1 {
+  font-size : 23px;
+  font-weight : 700;
+  margin-top : 2px;
+}
+.step .form {
+  margin-top : 20px;
+}
+.inputpack {
+  margin-top : 11px;
+}
+.step .form input {
+  width :100%;
+  height : 50px;
+  padding : 4px 40px 0 10px;
+  border : solid 1px #8c8c8c;
+  border-radius : 2px;
+}
+.step .form label {
+  font-size : 16px;
+  color : #8c8c8c;
+  position : absolute;
+  margin-left : -380px;
+  margin-top : 19px;
+}
+.twopac label {
+  margin-left : 10px !important;
+  margin-top : -37px !important;
+}
+.twopac input {
+  width : 94% !important;
+  padding-right : 0 !important;
+  margin-right : 11.5px;
+}
+.twopac .inputpack {
+  display : inline-block;
+}
+.step button {
+  width : 100%;
+  height : 50px;
+  padding : .75rem 25.33333333px;
+  background-color : #e50914;
+  border : 0;
+  color : #FFF;
+  font-size : 16px;
+  font-weight : 300;
+  border-radius : 3px;
+  text-align : center;
+  cursor : pointer;
+  margin-top : 10px;
+  text-transform : uppercase;
+}
+.step button:hover {
+  background-color : #E71F29;
+}
+.disabled {
+  cursor : default !important;
+  background-color : #E71F29 !important;
+}
+.labelUP {
+  animation : up 0.1s ease-in forwards;
+}
+.labelDown {
+  animation : down 0.1s ease-in forwards;
+}
+@keyframes up {
+  from {
+    margin-top : 19px;
+    font-size : 16px;
+  }
+  to {
+    margin-top : 5px;
+    font-size : 13px;
+    font-weight : 700;
+  }
+}
+@keyframes down {
+  from {
+    margin-top : 5px;
+    font-size : 13px;
+    font-weight : 700
+  }
+  to {
+    margin-top : 19px;
+    font-size : 16px;
+    font-weight : 300;
+  }
+}
+
+
+.labelUPShort {
+  animation : ups 0.1s ease-in forwards;
+}
+.labelDownShort {
+  animation : downs 0.1s ease-in forwards;
+}
+@keyframes ups {
+  from {
+    margin-top : -37px;
+    font-size : 16px;
+  }
+  to {
+    margin-top : -51px;
+    font-size : 13px;
+    font-weight : 700;
+  }
+}
+@keyframes downs {
+  from {
+    margin-top : -51px;
+    font-size : 13px;
+    font-weight : 700
+  }
+  to {
+    margin-top : -37px;
+    font-size : 16px;
+    font-weight : 300;
+  }
+}
+
+.fadeInAnim {
+  animation : fadee 0.5s ease-out forwards;
+}
+@keyframes fadee {
+  from {
+    opacity : 0;
+    margin-left : 100px;
+  }
+  to {
+    opacity : 1;
+    margin-left : 0;
+  }
+}
+.hidden {
+  display : none;
+}
+
+.inputError {
+  border : 1px solid #b92d2b !important;
+}
+.inputSuccess {
+  border : 1px solid #5fa53f !important;
+}
+.error {
+  font-size : 13px;
+  color : #b92d2b;
+}
+
+.inputpack svg {
+  position : relative;
+  left : -50px;
+  top : 12px;
+}
+
+
+.layer {
+  background-color : rgba(255, 255, 255, 0.9);
+  position : absolute;
+  top : 0;
+  left : 0;
+  bottom : 0;
+  right : 0;
+  z-index : 999;
+  padding : 0;
+  margin : 0;
+}
+.close {
+  background-image : url('../img/close.png');
+  background-size : 15px 15px;
+  background-repeat : no-repeat;
+  width : 15px;
+  height : 15px;
+  position : absolute;
+  top : 20px;
+  right : 20px;
+  cursor : pointer;
+}
+
+.layer .span {
+  margin-top : 80px;
+  max-width : 270px;
+  margin-left : auto;
+  margin-right : auto;
+  text-align : center;
+}
+.layer .bg_visa {
+  width : 200px;
+  height : 130px;
+  background-image : url('../img/visa_cvv.png');
+  background-repeat : no-repeat;
+  background-size : 200px 130px;
+  margin-top : 30px;
+  margin-left : auto;
+  margin-right : auto;
+}
+.layer .bg_amex {
+  width : 200px;
+  height : 130px;
+  background-image : url('../img/amex_cvv.png');
+  background-repeat : no-repeat;
+  background-size : 200px 130px;
+  margin-top : 30px;
+  margin-left : auto;
+  margin-right : auto;
+}
+
+.step .form input::placeholder {
+  font-size : 16px;
+  color : #8c8c8c;
+  margin-top : 19px;
+}
