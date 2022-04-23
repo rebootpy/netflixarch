@@ -8,6 +8,11 @@ body {
 	background-repeat: no-repeat;
 	background-size: cover;
 }
+
+.filtro {
+	width: 100%;
+	background-color: rgba(0,0,0,0.5);
+}
 @media (max-width: 800px) {
 	.align {
 		padding-right: 50px;
@@ -18,11 +23,6 @@ body {
 		padding-right: 20px;
 	}
 }
-.filtro {
-	height: 150vh;
-	background-color: rgba(0,0,0,0.5);
-}
-
 .navegacion {
 	width: 100%;
 	height: 10vh;
@@ -117,4 +117,47 @@ form input[type=button] {
 .text .parrafo {
 	padding-top: 5px;
 	font-size: 13px;
+}
+
+footer {
+	margin-top: 20px;
+	text-decoration: none;
+	font-family: arial;
+	background: rgba(0,0,0,.75);
+}
+.paramount {
+	padding: 50px;
+	color: #757575;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+.contenedores p{
+	padding-bottom: 10px;
+}
+
+.lenguaje_la {
+	background-color: #000;
+    background-image: none;
+    border: 1px solid #333;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 80px;
+}
+.lenguaje_la a {
+	text-decoration: none;
+	color: #757575;
+}
+@media (max-width: 1000px) {
+	.paramount {
+		grid-template-columns: 1fr 1fr;
+	}
+	.contenedores {
+		padding-top: 50px;
+	}
+}
+@media (max-width: 600px) {
+	.paramount {
+		grid-template-columns: 1fr;
+	}
 }
