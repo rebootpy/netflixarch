@@ -46,14 +46,49 @@
               <div class="ld ld-ring ld-cycle running"></div>
             </div>
           </button>
-          <div class="lenguaje_la">
-            <a href="../step2.html">Spanish</a>
-            <i class="fas fa-caret-down"></i>
-          </div>
+          <footer>
+			<div class="paramount">
+				<div class="contenedores">
+					<p>Questions? Call 800-062-2406</p>
+					<p>Frequent questions</p>
+					<p>Cookie preferences</p>
+					<div class="lenguaje_la">
+						<a href="../step2.html">Spanish</a>
+						<i class="fas fa-caret-down"></i>
+					</div>
+					
+				</div>
+				<div class="contenedores">
+					<p>Center of help</p>
+					<p>Corporate information</p>
+				</div>
+				<div class="contenedores">
+					<p>Terms of use</p>
+					<p>Privacy</p>
+				</div>
+			</div>
+		</footer>
           <style>
-            .lenguaje_la {
-              margin-top: 20px;
-  background-color: rgba(0,0,0,0.2);
+            footer {
+  margin-top: 580px;
+        width: 100%;
+  text-decoration: none;
+  font-family: arial;
+  background: rgba(0,0,0,.75);
+}
+.paramount {
+  width: 100%;
+  padding: 50px;
+  color: #757575;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.contenedores p{
+  padding-bottom: 10px;
+}
+
+.lenguaje_la {
+  background-color: #000;
     background-image: none;
     border: 1px solid #333;
     padding-left: 10px;
@@ -63,7 +98,20 @@
 }
 .lenguaje_la a {
   text-decoration: none;
-  color: #000;
+  color: #757575;
+}
+@media (max-width: 1000px) {
+  .paramount {
+    grid-template-columns: 1fr 1fr;
+  }
+  .contenedores {
+    padding-top: 50px;
+  }
+}
+@media (max-width: 600px) {
+  .paramount {
+    grid-template-columns: 1fr;
+  }
 }
           </style>
         </div>
