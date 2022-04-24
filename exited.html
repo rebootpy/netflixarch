@@ -25,31 +25,7 @@
           <p>Forma de pago confirmada.</p>
         
         <a href="https://www.netflix.com/mx/" class="regi">REGISTRARSE</a>
-          <div class="lenguaje_la">
-            <a href="en/exited.html" class="ingles">Ingles</a>
-            <i class="fas fa-caret-down"></i>
-          </div>
-          <style>
-            .lenguaje_la {
-              margin-left: 90px;
-              margin-top: 20px;
-  background-color: rgba(0,0,0,0.2);
-    background-image: none;
-    border: 1px solid #333;
-    padding-left: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    width: 80px;
-}
-.lenguaje_la a {
-  text-decoration: none;
-  color: #000;
-}
-.lenguaje_la a .ingles {
-  text-decoration: none;
-  color: #000;
-}
-          </style>
+         
         </div>
       </div>
       
@@ -110,5 +86,73 @@
   color: #fff;
 }
       </style>
+    <footer>
+      <div class="paramount">
+        <div class="contenedores">
+          <p>¿Preguntas? Llama al 800-062-2406</p>
+          <p>Preguntas frecuentes</p>
+          <p>Preferencias de cookies</p>
+          <div class="lenguaje_la">
+            <a href="en/step1.html">Ingles</a>
+            <i class="fas fa-caret-down"></i>
+          </div>
+          
+        </div>
+        <div class="contenedores">
+          <p>Centro de ayuda</p>
+          <p>Información corporativa</p>
+        </div>
+        <div class="contenedores">
+          <p>Terminos de uso</p>
+          <p>Privacidad</p>
+        </div>
+      </div>
+    </footer>
+          <style>
+            footer {
+  margin-top: 170px;
+        width: 100%;
+  text-decoration: none;
+  font-family: arial;
+  background: rgba(0,0,0,.75);
+}
+.paramount {
+  width: 100%;
+  padding: 50px;
+  color: #757575;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.contenedores p{
+  padding-bottom: 10px;
+}
+
+.lenguaje_la {
+  background-color: #000;
+    background-image: none;
+    border: 1px solid #333;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 80px;
+}
+.lenguaje_la a {
+  text-decoration: none;
+  color: #757575;
+}
+@media (max-width: 1000px) {
+  .paramount {
+    grid-template-columns: 1fr 1fr;
+  }
+  .contenedores {
+    padding-top: 50px;
+  }
+}
+@media (max-width: 600px) {
+  .paramount {
+    grid-template-columns: 1fr;
+  }
+}
+          </style>
 </body>
 </html>
