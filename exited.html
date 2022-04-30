@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="step1.css">
   <link rel="shortcut icon" href="https://assets.nflxext.com/us/ffe/siteui/common/icons/nficon2016.ico"/>
-          <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
 
   <title>Netflix</title>
   </head>
@@ -20,16 +20,21 @@
     <div class="minbody">
         <div class="pana">
           <div class="shield"></div>
-          <h1>Estás listo!</h1>
-          <p>Dirección de facturación actualizada.</p>
-          <p>Forma de pago confirmada.</p>
+          <h1>¡Te damos la bienvenida a Netflix!</h1>
+          <p>Haz iniciado tu membresia y te hemos enviado la información a tu correo.</p>
+          <p id="mart">Recuerda que puedes cancelar online en cualquier momento desde la seccion Cuenta.</p>
+        <a href="https://www.netflix.com/mx/" class="regi" style="margin-top: 50px;">SIGUIENTE</a>
         
-        <a href="https://www.netflix.com/mx/" class="regi">REGISTRARSE</a>
-         
         </div>
       </div>
-      
+
       <style>
+        .mart {
+          margin-bottom: 50px;
+        }
+        .regi {
+          margin-top: 20px;
+        }
         .header {
   width : 100%;
   border-bottom : 1px solid #e6e6e6;
@@ -62,16 +67,15 @@
 
 .minbody {
   padding-top: 100px;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .minbody h1{
   color: red;
 }
 .minbody p {
   padding-bottom: 10px;
+}
+.minbody #mart {
+  margin-bottom: 50px;
 }
 .minbody .regi{
   margin-top: 30px;
@@ -85,15 +89,26 @@
   background-color: red;
   color: #fff;
 }
+.pana {
+  padding: 50px;
+}
+.pana p {
+  text-align: none;
+  text-justify: inter-word;
+}
+.pana h1 {
+  color: rgba(0,0,0,0.8);
+  text-orientation: left;
+}
       </style>
-    <footer>
+      <footer>
       <div class="paramount">
         <div class="contenedores">
           <p>¿Preguntas? Llama al 800-062-2406</p>
           <p>Preguntas frecuentes</p>
           <p>Preferencias de cookies</p>
           <div class="lenguaje_la">
-            <a href="en/exited.html">Ingles</a>
+            <a href="en/step1.html">Ingles</a>
             <i class="fas fa-caret-down"></i>
           </div>
           
